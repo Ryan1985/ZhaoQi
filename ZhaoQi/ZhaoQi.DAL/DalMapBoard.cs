@@ -3,15 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ZhaoQi.Common
+namespace CyScada.DAL
 {
-    public class FilterConditionBuilder
+    public class DalMapBoard
     {
-
-
-
-
-
-
     }
 }

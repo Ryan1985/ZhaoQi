@@ -7,7 +7,39 @@ namespace ZhaoQi.Common
 {
     public class FilterCondition
     {
-        public string FilterKey { get; set; }
-        public string FilterValue { get; set; }
+        public enum RelationType
+        {
+            And,
+            Or,
+            AndBracket,
+            CloseBracket,
+            OrBracket
+        }
+
+        public enum ActionType
+        {
+            LikeStart,
+            LikeEnd,
+            Equal,
+            NotEqual,
+            LessThanAndEqual,
+            LessThan,
+            GreaterThanAndEqual,
+            GreaterThan,
+            In,
+            NotIn
+        }
+
+        public RelationType Relation { get; set; }
+        public ActionType Action { get; set; }
+        public string Value { get; set; }
+        public string Name { get;set;}
     }
+
+
+    
+
+
+
+
 }
