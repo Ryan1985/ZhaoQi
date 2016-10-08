@@ -1,30 +1,30 @@
 ﻿using System.Collections.Generic;
+using ZhaoQi.Web.Core.Models;
+using ZhaoQi.Web.Core.Repository;
 
 namespace ZhaoQi.Web.Core.Business
 {
     public class BllExecute
     {
 
-        //private Irepository _entities = new ZhaoQiEntity();
+               public BllExecute()
+        {
+        }
 
-        //public ZhaoQiEntity Entities
-        //{
-        //    get { return _entities; }
-        //    set { _entities = value; }
-        //}
+               public BllExecute(IRepository<ExecuteModel> entities)
+        {
+            _entities = entities;
+        }
 
 
-        //public string Add(List<ExecuteModel> list)
-        //{
-        //    _entities.ExecuteEntity.AddRange(list);
-        //    var result = _entities.SaveChanges();
-        //    if (result < 0)
-        //    {
-        //        return "新增失败";
-        //    }
-        //    return string.Empty;
-        //}
 
+               private IRepository<ExecuteModel> _entities = new HisDataRepository();
+
+               public IRepository<ExecuteModel> Entities
+        {
+            get { return _entities; }
+            set { _entities = value; }
+        }
 
 
 

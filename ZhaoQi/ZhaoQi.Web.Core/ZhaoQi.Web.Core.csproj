@@ -51,9 +51,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\BllExecute.cs" />
+    <Compile Include="Business\BllHisData.cs" />
     <Compile Include="Business\BllRealData.cs" />
     <Compile Include="EFDataAccess\ZhaoQiEntities.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ExecuteRepository.cs" />
+    <Compile Include="Repository\HisDataRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\RealDataRepository.cs" />
   </ItemGroup>

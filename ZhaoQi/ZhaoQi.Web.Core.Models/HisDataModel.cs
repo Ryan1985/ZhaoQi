@@ -1,6 +1,6 @@
 ﻿namespace ZhaoQi.Web.Core.Models
 {
-    public class HisDataModel:IModel
+    public class HisDataModel
     {
         public string Id { get; set; }
         public string Tag { get; set; }

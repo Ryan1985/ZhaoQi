@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ZhaoQi.Web.Core.Models
+namespace CyScada.Model
 {
-    public interface IModel
+    public class LoginModel
     {
-        string Id { get; set; }
     }
 }

@@ -2,41 +2,42 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using ZhaoQi.Web.Core.EFDataAccess;
+using System.Text;
 using ZhaoQi.Web.Core.Models;
 using ZhaoQi.Web.Core.Repository;
 
 namespace ZhaoQi.Web.Core.Business
 {
-    public class BllRealData
+    public class BllHisData
     {
+        public BllHisData()
+        {
+        }
 
-        public BllRealData() { }
-
-        public BllRealData(IRepository<RealDataModel> entities)
+        public BllHisData(IRepository<HisDataModel> entities)
         {
             _entities = entities;
         }
 
 
 
-        private IRepository<RealDataModel> _entities = new RealDataRepository();
+        private IRepository<HisDataModel> _entities = new HisDataRepository();
 
-        public IRepository<RealDataModel> Entities
+        public IRepository<HisDataModel> Entities
         {
             get { return _entities; }
             set { _entities = value; }
         }
 
 
-        public List<RealDataModel> Query(Hashtable filters)
+        public List<HisDataModel> Query(Hashtable filters)
         {
             if (filters == null || filters.Count == 0)
             {
                 return Entities.Query.ToList();
             }
 
-            var modelType = typeof(RealDataModel);
+            var modelType = typeof (HisDataModel);
             var queryResult = Entities.Query;
             foreach (DictionaryEntry de in filters)
             {
@@ -51,31 +52,34 @@ namespace ZhaoQi.Web.Core.Business
                     {
                         queryResult = Entities.Query.Where(
                             e => e.Id.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
-                    }break;
+                    }
+                        break;
                     case "Tag":
                     {
                         queryResult = Entities.Query.Where(
                             e => e.Tag.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
-                    } break;
+                    }
+                        break;
                     case "ProjectId":
-                        {
-                            queryResult = Entities.Query.Where(
-                                 e => e.ProjectId.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
-                        } break;
+                    {
+                        queryResult = Entities.Query.Where(
+                            e => e.ProjectId.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
+                    }
+                        break;
                     case "TagUnit":
-                        {
-                            queryResult = Entities.Query.Where(
-                                 e => e.TagUnit.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
-                        } break;
-                    default: continue;
+                    {
+                        queryResult = Entities.Query.Where(
+                            e => e.TagUnit.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
+                    }
+                        break;
+                    default:
+                        continue;
                 }
             }
 
             return queryResult.ToList();
         }
 
-
-        
 
 
     }

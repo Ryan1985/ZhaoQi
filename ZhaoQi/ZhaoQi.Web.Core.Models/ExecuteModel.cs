@@ -2,7 +2,7 @@
 
 namespace ZhaoQi.Web.Core.Models
 {
-    public class ExecuteModel:IModel
+    public class ExecuteModel
     {
         public string Id { get; set; }
         public string Tag { get; set; }
