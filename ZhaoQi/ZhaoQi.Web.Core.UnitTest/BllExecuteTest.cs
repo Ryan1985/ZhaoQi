@@ -14,7 +14,7 @@ namespace ZhaoQi.Web.Core.UnitTest
         [TestMethod]
         public void ExecuteCommandTest()
         {
-
+             
             //var rep = new StubIRepository<ExecuteModel>();
             //rep.QueryGet = () =>
             //{
