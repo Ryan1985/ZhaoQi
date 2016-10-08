@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace ZhaoQi.Model
+namespace ZhaoQi.Web.Core.Models
 {
-    public class ExecuteModel
+    public class ExecuteModel:IModel
     {
         public string Id { get; set; }
         public string Tag { get; set; }

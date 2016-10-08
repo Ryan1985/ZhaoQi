@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace ZhaoQi.Model
+﻿namespace ZhaoQi.Web.Core.Models
 {
-    public class ExecuteModel
+    public class RealDataModel:IModel
     {
         public string Id { get; set; }
         public string Tag { get; set; }
@@ -15,16 +9,10 @@ namespace ZhaoQi.Model
         public string TagUnit { get; set; }
         public string TagDesc { get; set; }
         public string UpdateTime { get; set; }
-        public string Flag { get; set; }
-        public string ExecuteTime { get; set; }
-
 
         public override bool Equals(object obj)
         {
-            return obj != null && this.Id.Equals(((ExecuteModel) obj).Id, StringComparison.CurrentCultureIgnoreCase);
+            return Id.Equals(obj.ToString(), System.StringComparison.CurrentCultureIgnoreCase);
         }
-
-
-
     }
 }
