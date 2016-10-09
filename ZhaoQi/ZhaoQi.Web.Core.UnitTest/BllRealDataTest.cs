@@ -80,11 +80,11 @@ namespace ZhaoQi.Web.Core.UnitTest
                 {
                     simData.Add(new RealDataModel
                     {
-                        Id = "Id" + i,
+                        Id =  i,
                         ProjectId = "ProjectId" + i,
                         Tag = "Tag" + i,
                         TagDesc = "TagDesc" + i,
-                        TagUnit = "TagUnit" + i,
+                        TagUint = "TagUint" + i,
                         TagValue = "TagValue" + i,
                         UpdateTime = string.Empty,
                     });
@@ -93,7 +93,7 @@ namespace ZhaoQi.Web.Core.UnitTest
             };
 
 
-            var bll = new BllRealData(rep);
+            var bll = new BllRealData();
             var queryResult = bll.Query(null);
             Assert.AreEqual(10, queryResult.Count);
         }
@@ -110,11 +110,11 @@ namespace ZhaoQi.Web.Core.UnitTest
                 {
                     simData.Add(new RealDataModel
                     {
-                        Id = "Id" + i,
+                        Id =  i,
                         ProjectId = "ProjectId" + i,
                         Tag = "Tag" + i,
                         TagDesc = "TagDesc" + i,
-                        TagUnit = "TagUnit" + i,
+                        TagUint = "TagUint" + i,
                         TagValue = "TagValue" + i,
                         UpdateTime = string.Empty,
                     });

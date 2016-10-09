@@ -10,17 +10,14 @@ namespace ZhaoQi.Web.Core.Business
 {
     public class BllRealData
     {
-
-        public BllRealData() { }
+        private IRepository<RealDataModel> _entities;
+        public BllRealData() { _entities = new RealDataRepository(); }
 
         public BllRealData(IRepository<RealDataModel> entities)
         {
             _entities = entities;
         }
 
-
-
-        private IRepository<RealDataModel> _entities = new RealDataRepository();
 
         public IRepository<RealDataModel> Entities
         {
@@ -50,7 +47,7 @@ namespace ZhaoQi.Web.Core.Business
                     case "Id":
                     {
                         queryResult = Entities.Query.Where(
-                            e => e.Id.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
+                            e => e.Id == Convert.ToInt32(de.Value));
                     }break;
                     case "Tag":
                     {
@@ -62,10 +59,10 @@ namespace ZhaoQi.Web.Core.Business
                             queryResult = Entities.Query.Where(
                                  e => e.ProjectId.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
                         } break;
-                    case "TagUnit":
+                    case "TagUint":
                         {
                             queryResult = Entities.Query.Where(
-                                 e => e.TagUnit.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
+                                 e => e.TagUint.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
                         } break;
                     default: continue;
                 }

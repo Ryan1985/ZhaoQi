@@ -51,7 +51,7 @@ namespace ZhaoQi.Web.Core.Business
                     case "Id":
                     {
                         queryResult = Entities.Query.Where(
-                            e => e.Id.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
+                            e => e.Id == Convert.ToInt32(de.Value));
                     }
                         break;
                     case "Tag":
@@ -66,10 +66,10 @@ namespace ZhaoQi.Web.Core.Business
                             e => e.ProjectId.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
                     }
                         break;
-                    case "TagUnit":
+                    case "TagUint":
                     {
                         queryResult = Entities.Query.Where(
-                            e => e.TagUnit.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
+                            e => e.TagUint.Equals(de.Value.ToString(), StringComparison.CurrentCultureIgnoreCase));
                     }
                         break;
                     default:

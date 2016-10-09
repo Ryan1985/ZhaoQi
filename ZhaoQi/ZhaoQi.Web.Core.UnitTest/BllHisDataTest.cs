@@ -25,11 +25,11 @@ namespace ZhaoQi.Web.Core.UnitTest
                 {
                     simData.Add(new HisDataModel
                     {
-                        Id = "Id" + i,
+                        Id = i,
                         ProjectId = "ProjectId" + i,
                         Tag = "Tag" + i,
                         TagDesc = "TagDesc" + i,
-                        TagUnit = "TagUnit" + i,
+                        TagUint = "TagUint" + i,
                         TagValue = "TagValue" + i,
                         UpdateTime = string.Empty,
                     });
@@ -55,11 +55,11 @@ namespace ZhaoQi.Web.Core.UnitTest
                 {
                     simData.Add(new HisDataModel
                     {
-                        Id = "Id" + i,
+                        Id =  i,
                         ProjectId = "ProjectId" + i,
                         Tag = "Tag" + i,
                         TagDesc = "TagDesc" + i,
-                        TagUnit = "TagUnit" + i,
+                        TagUint = "TagUint" + i,
                         TagValue = "TagValue" + i,
                         UpdateTime = string.Empty,
                     });

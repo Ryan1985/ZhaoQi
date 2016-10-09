@@ -27,7 +27,7 @@ namespace ZhaoQi.Web.Core.UnitTest
             //            ProjectId = "ProjectId" + i,
             //            Tag = "Tag" + i,
             //            TagDesc = "TagDesc" + i,
-            //            TagUnit = "TagUnit" + i,
+            //            TagUint = "TagUint" + i,
             //            TagValue = "TagValue" + i,
             //            UpdateTime = string.Empty,
             //        });

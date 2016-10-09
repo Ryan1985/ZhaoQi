@@ -58,7 +58,7 @@ namespace ZhaoQi.Web.Core.Repository
             {
                 var entityModel =
                     _entitiy.RealDataEntities.Where(
-                        r => r.Id.Equals(model.Id, StringComparison.CurrentCultureIgnoreCase))
+                        r => r.Id==model.Id)
                         .Select(r => r)
                         .FirstOrDefault();
 
@@ -67,7 +67,7 @@ namespace ZhaoQi.Web.Core.Repository
                     entityModel.ProjectId = model.ProjectId;
                     entityModel.Tag = model.Tag;
                     entityModel.TagDesc = model.TagDesc;
-                    entityModel.TagUnit = model.TagUnit;
+                    entityModel.TagUint = model.TagUint;
                     entityModel.TagValue = model.TagValue;
                     entityModel.UpdateTime = string.IsNullOrEmpty(model.UpdateTime)
                         ? DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")
