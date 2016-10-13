@@ -18,14 +18,22 @@ namespace ZhaoQi.WebApi.Controllers
         // GET api/realdata
         public string Get()
         {
-            var returnModels = bll.Query(null);
-            var returnValues = new Hashtable();
-            foreach (var model in returnModels)
+            try
             {
-                returnValues.Add(model.Tag + int.Parse(model.ProjectId).ToString("00"), model);
-            }
 
-            return JsonConvert.SerializeObject(returnValues);
+                var returnModels = bll.Query(null);
+                var returnValues = new Hashtable();
+                foreach (var model in returnModels)
+                {
+                    returnValues.Add(model.Tag + int.Parse(model.ProjectId).ToString("00"), model);
+                }
+
+                return JsonConvert.SerializeObject(returnValues);
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
         }
 
         // GET api/realdata/5

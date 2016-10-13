@@ -30,29 +30,29 @@ jQuery(document).ready(function(jQuery){
 	};
 	var tagvalueObj={
 	    "温度1-1": "400101",
-	    "温度1-2": "400102",
-	    "温度2-1": "400103",
-	    "温度2-2": "400104",
-	    "温度3-1": "400105",
-	    "温度3-2": "400106",
-	    "温度4-1": "400107",
-	    "温度4-2": "400108",
-	    "1#进干流量":"400201",
-	    "1#进湿阀":"400202",
-	    "1#产气": "400203",
-	    "2#进干流量": "400204",
-	    "2#进湿阀": "400205",
-	    "2#产气": "400206",
-	    "3#进干流量": "400207",
-	    "3#进湿阀": "400208",
-	    "3#产气": "400209",
-	    "4#进干流量": "400210",
-	    "4#进湿阀": "400211",
-	    "4#产气": "400212",
-	    "罐体压力": "400213",
-	    "供气流量": "400215",
-	    "供气压力": "400216",
-	    "储气压力": "400214",
+	    "温度1-2": "400201",
+	    "温度2-1": "400301",
+	    "温度2-2": "400401",
+	    "温度3-1": "400501",
+	    "温度3-2": "400601",
+	    "温度4-1": "400701",
+	    "温度4-2": "400801",
+	    "1#进干流量":"400901",
+	    "1#进湿阀":"401001",
+	    "1#产气": "401101",
+	    "2#进干流量": "401201",
+	    "2#进湿阀": "401301",
+	    "2#产气": "401401",
+	    "3#进干流量": "401501",
+	    "3#进湿阀": "401601",
+	    "3#产气": "401701",
+	    "4#进干流量": "401801",
+	    "4#进湿阀": "401901",
+	    "4#产气": "402001",
+	    "罐体压力": "402101",
+	    "供气流量": "402201",
+	    "供气压力": "402301",
+	    "储气压力": "402401",
 	};
 	init();
 	function init(){
@@ -69,7 +69,9 @@ jQuery(document).ready(function(jQuery){
         jQuery.get('../api/RealData', function (data) {
             var dataModel = JSON.parse(data);
             for (var i in tagidObj) {
-                Snap("#" + tagidObj[i]).node.textContent = dataModel[tagvalueObj[i]].TagValue + dataModel[tagvalueObj[i]].TagUint;
+                //Snap("#" + tagidObj[i]).node.textContent = dataModel[tagvalueObj[i]].TagValue + dataModel[tagvalueObj[i]].TagUint;
+
+                jQuery('#' + tagidObj[i] + " tspan").text(dataModel[tagvalueObj[i]].TagValue + dataModel[tagvalueObj[i]].TagUint);
             }
             setTimeout(ReadData, 1000);
         });
