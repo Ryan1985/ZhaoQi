@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using System.Web.Routing;
+using ZhaoQi.Web.App_Start;
 
 namespace ZhaoQi.Web
 {
@@ -11,7 +12,7 @@ namespace ZhaoQi.Web
     {
         protected void Application_Start()
         {
-            GlobalConfiguration.Configure(WebApiConfig.Register);
+            WebApiConfig.Register(GlobalConfiguration.Configuration);
         }
     }
 }

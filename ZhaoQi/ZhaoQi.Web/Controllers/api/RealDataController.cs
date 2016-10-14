@@ -4,7 +4,7 @@ using System.Web.Http;
 using Newtonsoft.Json;
 using ZhaoQi.Web.Core.Business;
 
-namespace ZhaoQi.Web.Controllers
+namespace ZhaoQi.Web.Controllers.api
 {
     public class RealDataController : ApiController
     {
