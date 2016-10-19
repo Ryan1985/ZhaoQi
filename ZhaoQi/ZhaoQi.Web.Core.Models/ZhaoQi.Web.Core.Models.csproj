@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="ExecuteModel.cs" />
     <Compile Include="HisDataModel.cs" />
+    <Compile Include="HistoryDataModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RealDataModel.cs" />
   </ItemGroup>

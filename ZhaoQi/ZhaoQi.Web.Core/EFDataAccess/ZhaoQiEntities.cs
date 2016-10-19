@@ -27,6 +27,7 @@ namespace ZhaoQi.Web.Core.EFDataAccess
         public virtual DbSet<ExecuteModel> ExecuteEntities { get; set; }
         public virtual DbSet<HisDataModel> HisDataEntities { get; set; }
         public virtual DbSet<RealDataModel> RealDataEntities { get; set; }
+        public virtual DbSet<HistoryDataModel> HistoryDataEntities { get; set; }
     }
 
     //public class MyEntity
