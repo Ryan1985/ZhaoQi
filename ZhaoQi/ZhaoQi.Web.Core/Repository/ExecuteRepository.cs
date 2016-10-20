@@ -85,5 +85,11 @@ namespace ZhaoQi.Web.Core.Repository
         {
             return _entitiy.SaveChanges();
         }
+
+
+        public IEnumerable<ExecuteModel> QueryBySql(string sql)
+        {
+            return _entitiy.Database.SqlQuery<ExecuteModel>(sql);
+        }
     }
 }

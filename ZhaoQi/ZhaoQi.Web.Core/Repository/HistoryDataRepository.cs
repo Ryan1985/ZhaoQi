@@ -36,7 +36,7 @@ namespace ZhaoQi.Web.Core.Repository
             _entitiy.HistoryDataEntities.AddRange(models);
             if (isAutoSubmit)
                 return SubmitChanges();
-
+            
             return models.Count();
         }
 
@@ -100,6 +100,12 @@ namespace ZhaoQi.Web.Core.Repository
         public int SubmitChanges()
         {
             return _entitiy.SaveChanges();
+        }
+
+
+        public IEnumerable<HistoryDataModel> QueryBySql(string sql)
+        {
+            return _entitiy.Database.SqlQuery<HistoryDataModel>(sql);
         }
     }
 }

@@ -12,6 +12,7 @@ namespace ZhaoQi.Web.Core.Repository
     {
         DbContext Entity { get; set; }
         IQueryable<T> Query { get; }
+        IEnumerable<T> QueryBySql(string sql);
         int Add(IEnumerable<T> models, bool isAutoSubmit = false);
         int Delete(IEnumerable<T> models, bool isAutoSubmit = false);
         int Modify(IEnumerable<T> models, bool isAutoSubmit = false);

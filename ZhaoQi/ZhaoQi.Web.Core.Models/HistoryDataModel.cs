@@ -7,7 +7,7 @@ using System.Text;
 
 namespace ZhaoQi.Web.Core.Models
 {
-    [Table("ZHANGLI.HisData")]
+    [Table("ZHANGLI.HistoryData")]
     public class HistoryDataModel
     {
         public int ID { get; set; }

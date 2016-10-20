@@ -93,7 +93,7 @@ namespace ZhaoQi.Web.Core.UnitTest
             };
 
 
-            var bll = new BllRealData();
+            var bll = new BllRealData(rep);
             var queryResult = bll.Query(null);
             Assert.AreEqual(10, queryResult.Count);
         }

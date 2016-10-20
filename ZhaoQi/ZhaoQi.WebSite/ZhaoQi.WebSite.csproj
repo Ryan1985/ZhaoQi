@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -19,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <TypeScriptToolsVersion>1.0</TypeScriptToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -458,6 +460,140 @@
     <Content Include="assets\ace\js\uncompressed\x-editable\bootstrap-editable.js" />
     <Content Include="assets\ace\js\x-editable\ace-editable.min.js" />
     <Content Include="assets\ace\js\x-editable\bootstrap-editable.min.js" />
+    <Content Include="assets\bootstrap-datetimepicker\css\bootstrap-datetimepicker.css" />
+    <Content Include="assets\bootstrap-datetimepicker\css\bootstrap-datetimepicker.min.css" />
+    <Content Include="assets\bootstrap-table\bootstrap-table-locale-all.js" />
+    <Content Include="assets\bootstrap-table\bootstrap-table-locale-all.min.js" />
+    <Content Include="assets\bootstrap-table\bootstrap-table.css" />
+    <Content Include="assets\bootstrap-table\bootstrap-table.js" />
+    <Content Include="assets\bootstrap-table\bootstrap-table.min.css" />
+    <Content Include="assets\bootstrap-table\bootstrap-table.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.js" />
+    <Content Include="assets\bootstrap-table\extensions\accent-neutralise\bootstrap-table-accent-neutralise.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\angular\bootstrap-table-angular.js" />
+    <Content Include="assets\bootstrap-table\extensions\angular\bootstrap-table-angular.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\cookie\bootstrap-table-cookie.js" />
+    <Content Include="assets\bootstrap-table\extensions\cookie\bootstrap-table-cookie.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\editable\bootstrap-table-editable.js" />
+    <Content Include="assets\bootstrap-table\extensions\editable\bootstrap-table-editable.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\export\bootstrap-table-export.js" />
+    <Content Include="assets\bootstrap-table\extensions\export\bootstrap-table-export.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\filter-control\bootstrap-table-filter-control.js" />
+    <Content Include="assets\bootstrap-table\extensions\filter-control\bootstrap-table-filter-control.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\filter\bootstrap-table-filter.js" />
+    <Content Include="assets\bootstrap-table\extensions\filter\bootstrap-table-filter.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\flat-json\bootstrap-table-flat-json.js" />
+    <Content Include="assets\bootstrap-table\extensions\flat-json\bootstrap-table-flat-json.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\group-by-v2\bootstrap-table-group-by.css" />
+    <Content Include="assets\bootstrap-table\extensions\group-by-v2\bootstrap-table-group-by.js" />
+    <Content Include="assets\bootstrap-table\extensions\group-by-v2\bootstrap-table-group-by.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\group-by\bootstrap-table-group-by.css" />
+    <Content Include="assets\bootstrap-table\extensions\group-by\bootstrap-table-group-by.js" />
+    <Content Include="assets\bootstrap-table\extensions\group-by\bootstrap-table-group-by.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\key-events\bootstrap-table-key-events.js" />
+    <Content Include="assets\bootstrap-table\extensions\key-events\bootstrap-table-key-events.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\mobile\bootstrap-table-mobile.js" />
+    <Content Include="assets\bootstrap-table\extensions\mobile\bootstrap-table-mobile.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\multiple-search\bootstrap-table-multiple-search.js" />
+    <Content Include="assets\bootstrap-table\extensions\multiple-search\bootstrap-table-multiple-search.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\multiple-sort\bootstrap-table-multiple-sort.js" />
+    <Content Include="assets\bootstrap-table\extensions\multiple-sort\bootstrap-table-multiple-sort.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\natural-sorting\bootstrap-table-natural-sorting.js" />
+    <Content Include="assets\bootstrap-table\extensions\natural-sorting\bootstrap-table-natural-sorting.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\reorder-columns\bootstrap-table-reorder-columns.js" />
+    <Content Include="assets\bootstrap-table\extensions\reorder-columns\bootstrap-table-reorder-columns.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.css" />
+    <Content Include="assets\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.js" />
+    <Content Include="assets\bootstrap-table\extensions\reorder-rows\bootstrap-table-reorder-rows.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\resizable\bootstrap-table-resizable.js" />
+    <Content Include="assets\bootstrap-table\extensions\resizable\bootstrap-table-resizable.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\sticky-header\bootstrap-table-sticky-header.css" />
+    <Content Include="assets\bootstrap-table\extensions\sticky-header\bootstrap-table-sticky-header.js" />
+    <Content Include="assets\bootstrap-table\extensions\sticky-header\bootstrap-table-sticky-header.min.js" />
+    <Content Include="assets\bootstrap-table\extensions\toolbar\bootstrap-table-toolbar.js" />
+    <Content Include="assets\bootstrap-table\extensions\toolbar\bootstrap-table-toolbar.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-af-ZA.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-af-ZA.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ar-SA.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ar-SA.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ca-ES.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ca-ES.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-cs-CZ.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-cs-CZ.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-da-DK.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-da-DK.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-de-DE.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-de-DE.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-el-GR.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-el-GR.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-en-US.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-en-US.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-AR.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-AR.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-CR.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-CR.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-ES.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-ES.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-MX.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-MX.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-NI.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-NI.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-SP.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-es-SP.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-et-EE.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-et-EE.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-fa-IR.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-fa-IR.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-fr-BE.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-fr-BE.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-fr-FR.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-fr-FR.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-hr-HR.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-hr-HR.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-hu-HU.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-hu-HU.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-it-IT.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-it-IT.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ja-JP.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ja-JP.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ka-GE.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ka-GE.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ko-KR.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ko-KR.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ms-MY.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ms-MY.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-nb-NO.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-nb-NO.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-nl-NL.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-nl-NL.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-pl-PL.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-pl-PL.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-pt-BR.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-pt-BR.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-pt-PT.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-pt-PT.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ro-RO.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ro-RO.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ru-RU.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ru-RU.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-sk-SK.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-sk-SK.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-sv-SE.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-sv-SE.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-th-TH.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-th-TH.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-tr-TR.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-tr-TR.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-uk-UA.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-uk-UA.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ur-PK.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-ur-PK.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-vi-VN.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-vi-VN.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-zh-CN.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-zh-CN.min.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-zh-TW.js" />
+    <Content Include="assets\bootstrap-table\locale\bootstrap-table-zh-TW.min.js" />
     <Content Include="Content\font-awesome.css" />
     <Content Include="Content\font-awesome.min.css" />
     <Content Include="fonts\fontawesome-webfont.svg" />
@@ -513,6 +649,54 @@
     <Content Include="js\bj-highcharts\把dataset处理成列-3ok的Highcharts.html" />
     <Content Include="js\bj-snap.svg\readme.txt" />
     <Content Include="js\bj-snap.svg\snap.svg-min.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\bootstrap-datetimepicker.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\bootstrap-datetimepicker.min.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.ar.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.az.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.bg.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.bn.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.ca.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.cs.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.da.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.de.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.ee.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.el.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.es.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.fi.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.fr.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.he.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.hr.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.hu.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.hy.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.id.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.is.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.it.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.ja.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.ka.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.ko.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.lt.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.lv.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.ms.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.nb.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.nl.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.no.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.pl.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.pt-BR.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.pt.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.ro.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.rs-latin.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.rs.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.ru.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.sk.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.sl.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.sv.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.sw.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.th.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.tr.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.ua.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.uk.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.zh-CN.js" />
+    <Content Include="assets\bootstrap-datetimepicker\js\locales\bootstrap-datetimepicker.zh-TW.js" />
     <Content Include="js\common.css" />
     <Content Include="js\index.js" />
     <Content Include="js\realtime-m.css" />
@@ -557,6 +741,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\api\HistoryDataController.cs" />
     <Compile Include="Controllers\api\RealDataController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -716,6 +901,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ProjectExtensions>

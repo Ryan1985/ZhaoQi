@@ -118,11 +118,11 @@ jQuery(document).ready(function($) {
 	init();
 
 	function init() {
-		dtDataA = cloneOpr.cloneArr(ajaxData.Table);
+	    dtDataA = cloneOpr.cloneArr(ajaxData.Table);
 		dtColumns = dtColumnsFn(dtDataA);
 		hcDataA = cloneOpr.cloneArr(ajaxData.Table);
 		hcxAxis=hcxAxisFn(hcDataA);
-		hcSeries=rowTocolHasFilter(hcDataA);
+		hcSeries = rowTocolHasFilter(hcDataA);
 		initDT();
 		initHC();
 	}

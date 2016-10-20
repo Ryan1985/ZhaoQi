@@ -107,7 +107,9 @@ namespace ZhaoQi.Web.Core.UnitTest
             var bll = new BllHistoryData(rep);
             var queryResult = bll.Query(new Hashtable
             {
-                {"ID","0"}
+                {"ID","0"},
+                {"UpdateTime@g",DateTime.Now.Date},
+                {"UpdateTime@l",DateTime.Now.AddDays(1).Date}
             });
             Assert.AreEqual(1, queryResult.Count);
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Entity.SqlServer;
 using System.Linq;
 using System.Text;
 using ZhaoQi.Web.Core.Models;
@@ -38,103 +39,87 @@ namespace ZhaoQi.Web.Core.Business
                 return Entities.Query.ToList();
             }
 
-            var modelType = typeof(HistoryDataModel);
-            var queryResult = Entities.Query;
+            var modelType = typeof (HistoryDataModel);
+
+            var sbSql = new StringBuilder(@"SELECT * 
+FROM ZHANGLI.HistoryData WITH(NOLOCK)
+WHERE 1=1 ");
             foreach (DictionaryEntry de in filters)
             {
-                if (modelType.GetProperty(de.Key.ToString()) == null)
+                var columnName = de.Key.ToString();
+                var suffix = string.Empty;
+                var columnPattern = de.Key.ToString().Split('@');
+                if (columnPattern.Length == 2)
+                {
+                    columnName = columnPattern[0];
+                    suffix = columnPattern[1];
+                }
+
+                if (modelType.GetProperty(columnName) == null)
                 {
                     continue;
                 }
-                var columnName = modelType.GetProperty(de.Key.ToString()).Name;
-                var columnType = modelType.GetProperty(de.Key.ToString()).PropertyType.FullName;
+
+                var columnType = modelType.GetProperty(columnName).PropertyType.FullName;
+
                 switch (columnType)
                 {
                     case "System.Int16":
                     case "System.Int32":
                     case "System.Int64":
                     {
-                        queryResult = queryResult.Where(
-                            e =>
-                                Convert.ToInt64(e.GetType().GetProperty(columnName).GetValue(e, null)) ==
-                                Convert.ToInt64(de.Value));
-                    }break;
+
+
+                        sbSql.AppendFormat(" AND {0} = {1}", columnName, de.Key);
+
+                    }
+                        break;
                     case "System.String":
                     {
-                        queryResult = queryResult.Where(
-                            e =>
-                                e.GetType().GetProperty(columnName).GetValue(e, null).ToString().ToLower() ==
-                                de.Value.ToString().ToLower());
+
+                        sbSql.AppendFormat(" AND {0} = '{1}'", columnName, de.Key);
                     }
-                    break;
+                        break;
                     case "System.DateTime":
                     {
-                        var columnPatterns = columnName.Split('@');
-                        if (columnPatterns.Length == 2)
+
+                        switch (suffix.ToLower())
                         {
-                            var suffix = columnPatterns[1];
-                            switch (suffix.ToLower())
-                            {
-                                case "g":
+                            case "g":
                                 {
-                                    queryResult = queryResult.Where(
-                                        e => Convert.ToDateTime(de.Value).Date >
-                                             Convert.ToDateTime(e.GetType()
-                                                 .GetProperty(columnName)
-                                                 .GetValue(e, null)).Date);
-                                }
-                                    break;
-                                case "ge":
-                                {
-                                    queryResult = queryResult.Where(
-                                        e => Convert.ToDateTime(de.Value).Date >=
-                                             Convert.ToDateTime(e.GetType()
-                                                 .GetProperty(columnName)
-                                                 .GetValue(e, null)).Date);
-                                }
-                                    break;
-                                case "l":
-                                {
-                                    queryResult = queryResult.Where(
-                                        e => Convert.ToDateTime(de.Value).Date <
-                                             Convert.ToDateTime(e.GetType()
-                                                 .GetProperty(columnName)
-                                                 .GetValue(e, null)).Date);
-                                }
-                                    break;
-                                case "le":
-                                {
-                                    queryResult = queryResult.Where(
-                                        e => Convert.ToDateTime(de.Value).Date <=
-                                             Convert.ToDateTime(e.GetType()
-                                                 .GetProperty(columnName)
-                                                 .GetValue(e, null)).Date);
-                                }
-                                    break;
-                                default:
-                                {
-                                    queryResult = queryResult.Where(
-                                        e => e.GetType()
-                                            .GetProperty(columnName)
-                                            .GetValue(e, null).ToString() == de.Value.ToString());
-                                }
-                                    break;
+
+                                    sbSql.AppendFormat(" AND {0} > '{1}'", columnName, de.Value);
+
                             }
-                        }
-                        else
-                        {
-                            queryResult = queryResult.Where(
-                                e =>
-                                    Convert.ToDateTime(e.GetType().GetProperty(columnName).GetValue(e, null)).Date ==
-                                    Convert.ToDateTime(de.Value).Date);
+                                break;
+                            case "ge":
+                                {
+                                    sbSql.AppendFormat(" AND {0} >= '{1}'", columnName, de.Value);
+                            }
+                                break;
+                            case "l":
+                                {
+                                    sbSql.AppendFormat(" AND {0} < '{1}'", columnName, de.Value);
+                            }
+                                break;
+                            case "le":
+                                {
+                                    sbSql.AppendFormat(" AND {0} <= '{1}'", columnName, de.Value);
+                            }
+                                break;
+                            default:
+                                {
+                                    sbSql.AppendFormat(" AND {0} = '{1}'", columnName, de.Value);
+                            }
+                                break;
                         }
                     }
-                    break;
+                        break;
                 }
-
             }
 
-            return queryResult.ToList();
+            return Entities.QueryBySql(sbSql.ToString()).ToList();
         }
+
     }
 }
