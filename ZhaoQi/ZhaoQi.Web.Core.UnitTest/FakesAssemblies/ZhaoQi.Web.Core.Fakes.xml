@@ -1,0 +1,872 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ZhaoQi.Web.Core.Fakes</name>
+    </assembly>
+    <members>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute">
+            <summary>ZhaoQi.Web.Core.Business.BllExecute 的填充码类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.#ctor(ZhaoQi.Web.Core.Business.BllExecute)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.Constructor">
+            <summary>设置 BllExecute.BllExecute() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.ConstructorIRepositoryOfExecuteModel">
+            <summary>设置 BllExecute.BllExecute(IRepository`1&lt;ExecuteModel&gt; entities) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.EntitiesGet">
+            <summary>设置 BllExecute.get_Entities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.EntitiesSetIRepositoryOfExecuteModel">
+            <summary>设置 BllExecute.set_Entities(IRepository`1&lt;ExecuteModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.ExcuteIEnumerableOfExecuteModel">
+            <summary>设置 BllExecute.Excute(IEnumerable`1&lt;ExecuteModel&gt; models) 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.AllInstances.EntitiesGet">
+            <summary>设置 BllExecute.get_Entities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.AllInstances.EntitiesSetIRepositoryOfExecuteModel">
+            <summary>设置 BllExecute.set_Entities(IRepository`1&lt;ExecuteModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllExecute.AllInstances.ExcuteIEnumerableOfExecuteModel">
+            <summary>设置 BllExecute.Excute(IEnumerable`1&lt;ExecuteModel&gt; models) 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData">
+            <summary>ZhaoQi.Web.Core.Business.BllHisData 的填充码类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.#ctor(ZhaoQi.Web.Core.Business.BllHisData)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.Constructor">
+            <summary>设置 BllHisData.BllHisData() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.ConstructorIRepositoryOfHisDataModel">
+            <summary>设置 BllHisData.BllHisData(IRepository`1&lt;HisDataModel&gt; entities) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.EntitiesGet">
+            <summary>设置 BllHisData.get_Entities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.EntitiesSetIRepositoryOfHisDataModel">
+            <summary>设置 BllHisData.set_Entities(IRepository`1&lt;HisDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.QueryHashtable">
+            <summary>设置 BllHisData.Query(Hashtable filters) 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.AllInstances.EntitiesGet">
+            <summary>设置 BllHisData.get_Entities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.AllInstances.EntitiesSetIRepositoryOfHisDataModel">
+            <summary>设置 BllHisData.set_Entities(IRepository`1&lt;HisDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHisData.AllInstances.QueryHashtable">
+            <summary>设置 BllHisData.Query(Hashtable filters) 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData">
+            <summary>ZhaoQi.Web.Core.Business.BllHistoryData 的填充码类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.#ctor(ZhaoQi.Web.Core.Business.BllHistoryData)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.Constructor">
+            <summary>设置 BllHistoryData.BllHistoryData() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.ConstructorIRepositoryOfHistoryDataModel">
+            <summary>设置 BllHistoryData.BllHistoryData(IRepository`1&lt;HistoryDataModel&gt; entities) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.EntitiesGet">
+            <summary>设置 BllHistoryData.get_Entities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.EntitiesSetIRepositoryOfHistoryDataModel">
+            <summary>设置 BllHistoryData.set_Entities(IRepository`1&lt;HistoryDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.QueryHashtable">
+            <summary>设置 BllHistoryData.Query(Hashtable filters) 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.AllInstances.EntitiesGet">
+            <summary>设置 BllHistoryData.get_Entities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.AllInstances.EntitiesSetIRepositoryOfHistoryDataModel">
+            <summary>设置 BllHistoryData.set_Entities(IRepository`1&lt;HistoryDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllHistoryData.AllInstances.QueryHashtable">
+            <summary>设置 BllHistoryData.Query(Hashtable filters) 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData">
+            <summary>ZhaoQi.Web.Core.Business.BllRealData 的填充码类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.#ctor(ZhaoQi.Web.Core.Business.BllRealData)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.Constructor">
+            <summary>设置 BllRealData.BllRealData() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.ConstructorIRepositoryOfRealDataModel">
+            <summary>设置 BllRealData.BllRealData(IRepository`1&lt;RealDataModel&gt; entities) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.EntitiesGet">
+            <summary>设置 BllRealData.get_Entities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.EntitiesSetIRepositoryOfRealDataModel">
+            <summary>设置 BllRealData.set_Entities(IRepository`1&lt;RealDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.QueryHashtable">
+            <summary>设置 BllRealData.Query(Hashtable filters) 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.AllInstances.EntitiesGet">
+            <summary>设置 BllRealData.get_Entities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.AllInstances.EntitiesSetIRepositoryOfRealDataModel">
+            <summary>设置 BllRealData.set_Entities(IRepository`1&lt;RealDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.ShimBllRealData.AllInstances.QueryHashtable">
+            <summary>设置 BllRealData.Query(Hashtable filters) 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.StubBllExecute">
+            <summary>ZhaoQi.Web.Core.Business.BllExecute 的存根类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllExecute.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllExecute.#ctor(ZhaoQi.Web.Core.Repository.IRepository{ZhaoQi.Web.Core.Models.ExecuteModel})">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllExecute.InitializeStub">
+            <summary>初始化 type StubBllExecute 的新实例</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllExecute.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllExecute.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllExecute.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.StubBllHisData">
+            <summary>ZhaoQi.Web.Core.Business.BllHisData 的存根类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllHisData.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllHisData.#ctor(ZhaoQi.Web.Core.Repository.IRepository{ZhaoQi.Web.Core.Models.HisDataModel})">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllHisData.InitializeStub">
+            <summary>初始化 type StubBllHisData 的新实例</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllHisData.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllHisData.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllHisData.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.StubBllHistoryData">
+            <summary>ZhaoQi.Web.Core.Business.BllHistoryData 的存根类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllHistoryData.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllHistoryData.#ctor(ZhaoQi.Web.Core.Repository.IRepository{ZhaoQi.Web.Core.Models.HistoryDataModel})">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllHistoryData.InitializeStub">
+            <summary>初始化 type StubBllHistoryData 的新实例</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllHistoryData.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllHistoryData.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllHistoryData.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Business.Fakes.StubBllRealData">
+            <summary>ZhaoQi.Web.Core.Business.BllRealData 的存根类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllRealData.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllRealData.#ctor(ZhaoQi.Web.Core.Repository.IRepository{ZhaoQi.Web.Core.Models.RealDataModel})">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Business.Fakes.StubBllRealData.InitializeStub">
+            <summary>初始化 type StubBllRealData 的新实例</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllRealData.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllRealData.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Business.Fakes.StubBllRealData.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities">
+            <summary>ZhaoQi.Web.Core.EFDataAccess.ZhaoQiEntities 的填充码类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.#ctor(ZhaoQi.Web.Core.EFDataAccess.ZhaoQiEntities)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.Bind(System.Data.Entity.Infrastructure.IObjectContextAdapter)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.Bind(System.IDisposable)">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.Constructor">
+            <summary>设置 ZhaoQiEntities.ZhaoQiEntities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.ExecuteEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_ExecuteEntities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.ExecuteEntitiesSetDbSetOfExecuteModel">
+            <summary>设置 ZhaoQiEntities.set_ExecuteEntities(DbSet`1&lt;ExecuteModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.HisDataEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_HisDataEntities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.HisDataEntitiesSetDbSetOfHisDataModel">
+            <summary>设置 ZhaoQiEntities.set_HisDataEntities(DbSet`1&lt;HisDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.HistoryDataEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_HistoryDataEntities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.HistoryDataEntitiesSetDbSetOfHistoryDataModel">
+            <summary>设置 ZhaoQiEntities.set_HistoryDataEntities(DbSet`1&lt;HistoryDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.RealDataEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_RealDataEntities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.RealDataEntitiesSetDbSetOfRealDataModel">
+            <summary>设置 ZhaoQiEntities.set_RealDataEntities(DbSet`1&lt;RealDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.AllInstances.ExecuteEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_ExecuteEntities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.AllInstances.ExecuteEntitiesSetDbSetOfExecuteModel">
+            <summary>设置 ZhaoQiEntities.set_ExecuteEntities(DbSet`1&lt;ExecuteModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.AllInstances.HisDataEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_HisDataEntities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.AllInstances.HisDataEntitiesSetDbSetOfHisDataModel">
+            <summary>设置 ZhaoQiEntities.set_HisDataEntities(DbSet`1&lt;HisDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.AllInstances.HistoryDataEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_HistoryDataEntities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.AllInstances.HistoryDataEntitiesSetDbSetOfHistoryDataModel">
+            <summary>设置 ZhaoQiEntities.set_HistoryDataEntities(DbSet`1&lt;HistoryDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.AllInstances.RealDataEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_RealDataEntities() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.ShimZhaoQiEntities.AllInstances.RealDataEntitiesSetDbSetOfRealDataModel">
+            <summary>设置 ZhaoQiEntities.set_RealDataEntities(DbSet`1&lt;RealDataModel&gt; value) 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities">
+            <summary>ZhaoQi.Web.Core.EFDataAccess.ZhaoQiEntities 的存根类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.AttachBackingFieldToExecuteEntities">
+            <summary>附加委托以将 StubZhaoQiEntities.ExecuteEntities 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.AttachBackingFieldToHisDataEntities">
+            <summary>附加委托以将 StubZhaoQiEntities.HisDataEntities 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.AttachBackingFieldToHistoryDataEntities">
+            <summary>附加委托以将 StubZhaoQiEntities.HistoryDataEntities 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.AttachBackingFieldToRealDataEntities">
+            <summary>附加委托以将 StubZhaoQiEntities.RealDataEntities 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.Dispose(System.Boolean)">
+            <summary>设置 DbContext.Dispose(Boolean disposing) 的 存根</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.DisposeBoolean">
+            <summary>设置 DbContext.Dispose(Boolean disposing) 的 stub</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.Equals(System.Object)">
+            <summary>设置 DbContext.Equals(Object obj) 的 存根</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.EqualsObject">
+            <summary>设置 DbContext.Equals(Object obj) 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.ExecuteEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_ExecuteEntities() 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.ExecuteEntitiesSetDbSetOfExecuteModel">
+            <summary>设置 ZhaoQiEntities.set_ExecuteEntities(DbSet`1&lt;ExecuteModel&gt; value) 的 stub</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.GetHashCode">
+            <summary>设置 DbContext.GetHashCode() 的 存根</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.GetHashCode01">
+            <summary>设置 DbContext.GetHashCode() 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.HisDataEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_HisDataEntities() 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.HisDataEntitiesSetDbSetOfHisDataModel">
+            <summary>设置 ZhaoQiEntities.set_HisDataEntities(DbSet`1&lt;HisDataModel&gt; value) 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.HistoryDataEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_HistoryDataEntities() 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.HistoryDataEntitiesSetDbSetOfHistoryDataModel">
+            <summary>设置 ZhaoQiEntities.set_HistoryDataEntities(DbSet`1&lt;HistoryDataModel&gt; value) 的 stub</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.InitializeStub">
+            <summary>初始化 type StubZhaoQiEntities 的新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.OnModelCreating(System.Data.Entity.DbModelBuilder)">
+            <summary>设置 DbContext.OnModelCreating(DbModelBuilder modelBuilder) 的 存根</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.OnModelCreatingDbModelBuilder">
+            <summary>设置 DbContext.OnModelCreating(DbModelBuilder modelBuilder) 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.RealDataEntitiesGet">
+            <summary>设置 ZhaoQiEntities.get_RealDataEntities() 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.RealDataEntitiesSetDbSetOfRealDataModel">
+            <summary>设置 ZhaoQiEntities.set_RealDataEntities(DbSet`1&lt;RealDataModel&gt; value) 的 stub</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.SaveChanges">
+            <summary>设置 DbContext.SaveChanges() 的 存根</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.SaveChanges01">
+            <summary>设置 DbContext.SaveChanges() 的 stub</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.Set(System.Type)">
+            <summary>设置 DbContext.Set(Type entityType) 的 存根</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.Set``1">
+            <summary>设置 DbContext.Set() 的 存根</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.SetOf1``1(Microsoft.QualityTools.Testing.Fakes.FakesDelegates.Func{System.Data.Entity.DbSet{``0}})">
+            <summary>设置 Set() 的存根</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.SetType">
+            <summary>设置 DbContext.Set(Type entityType) 的 stub</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.ShouldValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry)">
+            <summary>设置 DbContext.ShouldValidateEntity(DbEntityEntry entityEntry) 的 存根</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.ShouldValidateEntityDbEntityEntry">
+            <summary>设置 DbContext.ShouldValidateEntity(DbEntityEntry entityEntry) 的 stub</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.ToString">
+            <summary>设置 DbContext.ToString() 的 存根</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.ToString01">
+            <summary>设置 DbContext.ToString() 的 stub</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.ValidateEntity(System.Data.Entity.Infrastructure.DbEntityEntry,System.Collections.Generic.IDictionary{System.Object,System.Object})">
+            <summary>设置 DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items) 的 存根</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.ValidateEntityDbEntityEntryIDictionaryOfObjectObject">
+            <summary>设置 DbContext.ValidateEntity(DbEntityEntry entityEntry, IDictionary`2&lt;Object,Object&gt; items) 的 stub</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.ExecuteEntities">
+            <summary>设置 ZhaoQiEntities.get_ExecuteEntities() 的 stub</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.HisDataEntities">
+            <summary>设置 ZhaoQiEntities.get_HisDataEntities() 的 stub</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.HistoryDataEntities">
+            <summary>设置 ZhaoQiEntities.get_HistoryDataEntities() 的 stub</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.EFDataAccess.Fakes.StubZhaoQiEntities.RealDataEntities">
+            <summary>设置 ZhaoQiEntities.get_RealDataEntities() 的 stub</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository">
+            <summary>ZhaoQi.Web.Core.Repository.ExecuteRepository 的填充码类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.#ctor(ZhaoQi.Web.Core.Repository.ExecuteRepository)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.Bind(ZhaoQi.Web.Core.Repository.IRepository{ZhaoQi.Web.Core.Models.ExecuteModel})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.AddIEnumerableOfExecuteModelBoolean">
+            <summary>设置 ExecuteRepository.Add(IEnumerable`1&lt;ExecuteModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.Constructor">
+            <summary>设置 ExecuteRepository.ExecuteRepository() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.DeleteIEnumerableOfExecuteModelBoolean">
+            <summary>设置 ExecuteRepository.Delete(IEnumerable`1&lt;ExecuteModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.EntityGet">
+            <summary>设置 ExecuteRepository.get_Entity() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.EntitySetDbContext">
+            <summary>设置 ExecuteRepository.set_Entity(DbContext value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.ModifyIEnumerableOfExecuteModelBoolean">
+            <summary>设置 ExecuteRepository.Modify(IEnumerable`1&lt;ExecuteModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.QueryGet">
+            <summary>设置 ExecuteRepository.get_Query() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.SubmitChanges">
+            <summary>设置 ExecuteRepository.SubmitChanges() 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.AllInstances.AddIEnumerableOfExecuteModelBoolean">
+            <summary>设置 ExecuteRepository.Add(IEnumerable`1&lt;ExecuteModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.AllInstances.DeleteIEnumerableOfExecuteModelBoolean">
+            <summary>设置 ExecuteRepository.Delete(IEnumerable`1&lt;ExecuteModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.AllInstances.EntityGet">
+            <summary>设置 ExecuteRepository.get_Entity() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.AllInstances.EntitySetDbContext">
+            <summary>设置 ExecuteRepository.set_Entity(DbContext value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.AllInstances.ModifyIEnumerableOfExecuteModelBoolean">
+            <summary>设置 ExecuteRepository.Modify(IEnumerable`1&lt;ExecuteModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.AllInstances.QueryGet">
+            <summary>设置 ExecuteRepository.get_Query() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimExecuteRepository.AllInstances.SubmitChanges">
+            <summary>设置 ExecuteRepository.SubmitChanges() 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository">
+            <summary>ZhaoQi.Web.Core.Repository.HisDataRepository 的填充码类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.#ctor(ZhaoQi.Web.Core.Repository.HisDataRepository)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.Bind(ZhaoQi.Web.Core.Repository.IRepository{ZhaoQi.Web.Core.Models.HisDataModel})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.AddIEnumerableOfHisDataModelBoolean">
+            <summary>设置 HisDataRepository.Add(IEnumerable`1&lt;HisDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.Constructor">
+            <summary>设置 HisDataRepository.HisDataRepository() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.DeleteIEnumerableOfHisDataModelBoolean">
+            <summary>设置 HisDataRepository.Delete(IEnumerable`1&lt;HisDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.EntityGet">
+            <summary>设置 HisDataRepository.get_Entity() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.EntitySetDbContext">
+            <summary>设置 HisDataRepository.set_Entity(DbContext value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.ModifyIEnumerableOfHisDataModelBoolean">
+            <summary>设置 HisDataRepository.Modify(IEnumerable`1&lt;HisDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.QueryGet">
+            <summary>设置 HisDataRepository.get_Query() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.SubmitChanges">
+            <summary>设置 HisDataRepository.SubmitChanges() 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.AllInstances.AddIEnumerableOfHisDataModelBoolean">
+            <summary>设置 HisDataRepository.Add(IEnumerable`1&lt;HisDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.AllInstances.DeleteIEnumerableOfHisDataModelBoolean">
+            <summary>设置 HisDataRepository.Delete(IEnumerable`1&lt;HisDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.AllInstances.EntityGet">
+            <summary>设置 HisDataRepository.get_Entity() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.AllInstances.EntitySetDbContext">
+            <summary>设置 HisDataRepository.set_Entity(DbContext value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.AllInstances.ModifyIEnumerableOfHisDataModelBoolean">
+            <summary>设置 HisDataRepository.Modify(IEnumerable`1&lt;HisDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.AllInstances.QueryGet">
+            <summary>设置 HisDataRepository.get_Query() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHisDataRepository.AllInstances.SubmitChanges">
+            <summary>设置 HisDataRepository.SubmitChanges() 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository">
+            <summary>ZhaoQi.Web.Core.Repository.HistoryDataRepository 的填充码类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.#ctor(ZhaoQi.Web.Core.Repository.HistoryDataRepository)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.Bind(ZhaoQi.Web.Core.Repository.IRepository{ZhaoQi.Web.Core.Models.HistoryDataModel})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.AddIEnumerableOfHistoryDataModelBoolean">
+            <summary>设置 HistoryDataRepository.Add(IEnumerable`1&lt;HistoryDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.Constructor">
+            <summary>设置 HistoryDataRepository.HistoryDataRepository() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.DeleteIEnumerableOfHistoryDataModelBoolean">
+            <summary>设置 HistoryDataRepository.Delete(IEnumerable`1&lt;HistoryDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.EntityGet">
+            <summary>设置 HistoryDataRepository.get_Entity() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.EntitySetDbContext">
+            <summary>设置 HistoryDataRepository.set_Entity(DbContext value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.ModifyIEnumerableOfHistoryDataModelBoolean">
+            <summary>设置 HistoryDataRepository.Modify(IEnumerable`1&lt;HistoryDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.QueryGet">
+            <summary>设置 HistoryDataRepository.get_Query() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.SubmitChanges">
+            <summary>设置 HistoryDataRepository.SubmitChanges() 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.AllInstances.AddIEnumerableOfHistoryDataModelBoolean">
+            <summary>设置 HistoryDataRepository.Add(IEnumerable`1&lt;HistoryDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.AllInstances.DeleteIEnumerableOfHistoryDataModelBoolean">
+            <summary>设置 HistoryDataRepository.Delete(IEnumerable`1&lt;HistoryDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.AllInstances.EntityGet">
+            <summary>设置 HistoryDataRepository.get_Entity() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.AllInstances.EntitySetDbContext">
+            <summary>设置 HistoryDataRepository.set_Entity(DbContext value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.AllInstances.ModifyIEnumerableOfHistoryDataModelBoolean">
+            <summary>设置 HistoryDataRepository.Modify(IEnumerable`1&lt;HistoryDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.AllInstances.QueryGet">
+            <summary>设置 HistoryDataRepository.get_Query() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimHistoryDataRepository.AllInstances.SubmitChanges">
+            <summary>设置 HistoryDataRepository.SubmitChanges() 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository">
+            <summary>ZhaoQi.Web.Core.Repository.RealDataRepository 的填充码类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.#ctor">
+            <summary>初始化新的填充码实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.#ctor(ZhaoQi.Web.Core.Repository.RealDataRepository)">
+            <summary>初始化给定实例的新填充码</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.BehaveAsCurrent">
+            <summary>为已填充的类型的所有方法分配“Current”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.BehaveAsNotImplemented">
+            <summary>为已填充的类型的所有方法分配“NotImplemented”行为</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.Bind(ZhaoQi.Web.Core.Repository.IRepository{ZhaoQi.Web.Core.Models.RealDataModel})">
+            <summary>将接口的成员绑定到此填充码。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.AddIEnumerableOfRealDataModelBoolean">
+            <summary>设置 RealDataRepository.Add(IEnumerable`1&lt;RealDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.Behavior">
+            <summary>为已填充的类型的所有方法分配行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.Constructor">
+            <summary>设置 RealDataRepository.RealDataRepository() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.DeleteIEnumerableOfRealDataModelBoolean">
+            <summary>设置 RealDataRepository.Delete(IEnumerable`1&lt;RealDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.EntityGet">
+            <summary>设置 RealDataRepository.get_Entity() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.EntitySetDbContext">
+            <summary>设置 RealDataRepository.set_Entity(DbContext value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.ModifyIEnumerableOfRealDataModelBoolean">
+            <summary>设置 RealDataRepository.Modify(IEnumerable`1&lt;RealDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.QueryGet">
+            <summary>设置 RealDataRepository.get_Query() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.SubmitChanges">
+            <summary>设置 RealDataRepository.SubmitChanges() 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.AllInstances">
+            <summary>为所有实例成员定义填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.AllInstances.AddIEnumerableOfRealDataModelBoolean">
+            <summary>设置 RealDataRepository.Add(IEnumerable`1&lt;RealDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.AllInstances.DeleteIEnumerableOfRealDataModelBoolean">
+            <summary>设置 RealDataRepository.Delete(IEnumerable`1&lt;RealDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.AllInstances.EntityGet">
+            <summary>设置 RealDataRepository.get_Entity() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.AllInstances.EntitySetDbContext">
+            <summary>设置 RealDataRepository.set_Entity(DbContext value) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.AllInstances.ModifyIEnumerableOfRealDataModelBoolean">
+            <summary>设置 RealDataRepository.Modify(IEnumerable`1&lt;RealDataModel&gt; models, Boolean isAutoSubmit) 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.AllInstances.QueryGet">
+            <summary>设置 RealDataRepository.get_Query() 的 填充码</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.ShimRealDataRepository.AllInstances.SubmitChanges">
+            <summary>设置 RealDataRepository.SubmitChanges() 的 填充码</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.StubExecuteRepository">
+            <summary>ZhaoQi.Web.Core.Repository.ExecuteRepository 的存根类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubExecuteRepository.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubExecuteRepository.InitializeStub">
+            <summary>初始化 type StubExecuteRepository 的新实例</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubExecuteRepository.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubExecuteRepository.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubExecuteRepository.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.StubHisDataRepository">
+            <summary>ZhaoQi.Web.Core.Repository.HisDataRepository 的存根类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubHisDataRepository.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubHisDataRepository.InitializeStub">
+            <summary>初始化 type StubHisDataRepository 的新实例</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubHisDataRepository.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubHisDataRepository.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubHisDataRepository.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.StubHistoryDataRepository">
+            <summary>ZhaoQi.Web.Core.Repository.HistoryDataRepository 的存根类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubHistoryDataRepository.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubHistoryDataRepository.InitializeStub">
+            <summary>初始化 type StubHistoryDataRepository 的新实例</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubHistoryDataRepository.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubHistoryDataRepository.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubHistoryDataRepository.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1">
+            <summary>ZhaoQi.Web.Core.Repository.IRepository`1 的存根类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.#ctor">
+            <summary>初始化 type StubIRepository 的新实例</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.AddIEnumerableOfT0Boolean">
+            <summary>设置 IRepository`1.Add(IEnumerable`1&lt;!0&gt; models, Boolean isAutoSubmit) 的 stub</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.AttachBackingFieldToEntity">
+            <summary>附加委托以将 StubIRepository.Entity 作为具有支持字段的属性进行模拟。</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.DeleteIEnumerableOfT0Boolean">
+            <summary>设置 IRepository`1.Delete(IEnumerable`1&lt;!0&gt; models, Boolean isAutoSubmit) 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.EntityGet">
+            <summary>设置 IRepository`1.get_Entity() 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.EntitySetDbContext">
+            <summary>设置 IRepository`1.set_Entity(DbContext value) 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.ModifyIEnumerableOfT0Boolean">
+            <summary>设置 IRepository`1.Modify(IEnumerable`1&lt;!0&gt; models, Boolean isAutoSubmit) 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.QueryGet">
+            <summary>设置 IRepository`1.get_Query() 的 stub</summary>
+        </member>
+        <member name="F:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.SubmitChanges">
+            <summary>设置 IRepository`1.SubmitChanges() 的 stub</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.zqwc::ZhaoQi#Web#Core#Repository#IRepository{T}#Add(System.Collections.Generic.IEnumerable{`0},System.Boolean)">
+            <summary>设置 IRepository`1.Add(IEnumerable`1&lt;!0&gt; models, Boolean isAutoSubmit) 的 存根</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.zqwc::ZhaoQi#Web#Core#Repository#IRepository{T}#Delete(System.Collections.Generic.IEnumerable{`0},System.Boolean)">
+            <summary>设置 IRepository`1.Delete(IEnumerable`1&lt;!0&gt; models, Boolean isAutoSubmit) 的 存根</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.zqwc::ZhaoQi#Web#Core#Repository#IRepository{T}#Modify(System.Collections.Generic.IEnumerable{`0},System.Boolean)">
+            <summary>设置 IRepository`1.Modify(IEnumerable`1&lt;!0&gt; models, Boolean isAutoSubmit) 的 存根</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.zqwc::ZhaoQi#Web#Core#Repository#IRepository{T}#SubmitChanges">
+            <summary>设置 IRepository`1.SubmitChanges() 的 存根</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.zqwc::ZhaoQi#Web#Core#Repository#IRepository{T}#Entity">
+            <summary>设置 IRepository`1.get_Entity() 的 stub</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubIRepository`1.zqwc::ZhaoQi#Web#Core#Repository#IRepository{T}#Query">
+            <summary>设置 IRepository`1.get_Query() 的 stub</summary>
+        </member>
+        <member name="T:ZhaoQi.Web.Core.Repository.Fakes.StubRealDataRepository">
+            <summary>ZhaoQi.Web.Core.Repository.RealDataRepository 的存根类型</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubRealDataRepository.#ctor">
+            <summary>初始化新实例</summary>
+        </member>
+        <member name="M:ZhaoQi.Web.Core.Repository.Fakes.StubRealDataRepository.InitializeStub">
+            <summary>初始化 type StubRealDataRepository 的新实例</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubRealDataRepository.CallBase">
+            <summary>获取或设置一个值，该值指示是否应调用基方法而不调用回退行为</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubRealDataRepository.InstanceBehavior">
+            <summary>获取或设置实例行为。</summary>
+        </member>
+        <member name="P:ZhaoQi.Web.Core.Repository.Fakes.StubRealDataRepository.InstanceObserver">
+            <summary>获取或设置实例观察者。</summary>
+        </member>
+    </members>
+</doc>

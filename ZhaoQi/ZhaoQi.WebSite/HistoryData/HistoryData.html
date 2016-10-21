@@ -1,54 +1,99 @@
-﻿
-<link rel="stylesheet" href="../js/bj-datatables/dataTables.bootstrap.min.css" />
-<link rel="stylesheet" href="../js/tablechart-m.css" />
+﻿<!--<link rel="stylesheet" href="../js/bj-datatables/dataTables.bootstrap.min.css" />-->
+<!--<link rel="stylesheet" href="../js/tablechart-m.css" />-->
 
-<div>
+<link rel="stylesheet" href="../assets/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css" />
+<link rel="stylesheet" href="../assets/bootstrap-table/bootstrap-table.min.css" />
+<script type="text/javascript" src="../assets/ace/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../assets/bootstrap-table/bootstrap-table.min.js"></script>
+<script type="text/javascript" src="../assets/bootstrap-table/locale/bootstrap-table-zh-CN.min.js"></script>
+<script type="text/javascript" src="../assets/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript" src="../assets/bootstrap-datetimepicker/js/locales/bootstrap-datetimepicker.zh-CN.js"></script>
+
+<div ng-controller="historyDataController" ng-init="Inital()">
     <div class="container-fluid">
-        <div class="form-inline">
-            <div class="form-group">
-                <label>项目地址:</label>
-                <select class="form-control">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                </select>
+        <div class="row">
+            <label class="col-lg-1" style="height:34px;line-height:34px;text-align:right">起始时间:</label>
+            <div class="col-lg-2">
+                <div class="input-append date" id="datetimepickerStart">
+                    <input size="16" type="text" value="" style="width:150px">
+                    <span class="add-on"><i class="fa fa-calendar"></i></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label>起始时间:</label>
-                <span class="input-icon">
-                    <input type="text" class="form-control" />
-                    <i class="fa fa-calendar bj-icon blue"></i>
-                </span>
+            <label class="col-lg-1" style="height:34px;line-height:34px;text-align:right">结束时间:</label>
+            <div class="col-lg-2">
+                <div class="input-append date" id="datetimepickerEnd">
+                    <input size="16" type="text" value="" style="width:150px">
+                    <span class="add-on"><i class="fa fa-calendar"></i></span>
+                </div>
             </div>
-            <div class="form-group">
-                <label>结束时间:</label>
-                <span class="input-icon">
-                    <input type="text" class="form-control" />
-                    <i class="fa fa-calendar bj-icon blue"></i>
-                </span>
-            </div>
-            <div class="form-group">
-                <button class="bj-btn-outline" type="button">查询</button>
+            <div class="col-lg-2 ">
+                <button class="btn btn-sm" ng-click="Query()"><i class="fa fa-search"></i>查询</button>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <div id="dt-narrow-wrap" style="">
-            <table id="dt-narrow" class="display compact table table-striped table-bordered" cellspacing="0" width="100%"></table>
+        <div class="row">
+            <div class="col-lg-12">
+                <table id="ListTable" data-toggle="table" data-striped="true"
+                       data-show-pagination-switch="false"
+                       data-pagination="true"
+                       data-page-list="[10,25,50,100,ALL]"
+                       data-id-field="ID"
+                       data-locale="zh-CN">
+                    <thead>
+                        <tr>
+                            <th data-field="UpdateTime" data-visible="true" data-align="center" data-halign="center" rowspan="2" data-valign="middle">更新时间</th>
+                            <th data-field="ID" data-visible="false" rowspan="2" data-align="center" data-halign="center" data-valign="middle">ID</th>
+                            <th data-align="center" data-halign="center" data-valign="middle" colspan="5">1#罐体</th>
+                            <th data-align="center" data-halign="center" data-valign="middle" colspan="5">2#罐体</th>
+                            <th data-align="center" data-halign="center" data-valign="middle" colspan="5">3#罐体</th>
+                            <th data-align="center" data-halign="center" data-valign="middle" colspan="5">4#罐体</th>
+                            <th data-align="center" data-halign="center" data-valign="middle" colspan="4">其他参数</th>
+                        </tr>
+                        <tr>
+                            <th data-field="Can_Temp1_1" data-visible="true" data-align="center" data-halign="center" data-valign="middle">温度1</th>
+                            <th data-field="Can_Temp1_2" data-visible="true" data-align="center" data-halign="center" data-valign="middle">温度2</th>
+                            <th data-field="Can_Flow_Dry1" data-visible="true" data-align="center" data-halign="center" data-valign="middle">进干流量 </th>
+                            <th data-field="Can_Flow_Wet1" data-visible="true" data-align="center" data-halign="center" data-valign="middle">进湿流量</th>
+                            <th data-field="Can_Produce1" data-visible="true" data-align="center" data-halign="center" data-valign="middle">产气流量</th>
+                            <th data-field="Can_Temp2_1" data-visible="true" data-align="center" data-halign="center" data-valign="middle">温度1</th>
+                            <th data-field="Can_Temp2_2" data-visible="true" data-align="center" data-halign="center" data-valign="middle">温度2</th>
+                            <th data-field="Can_Flow_Dry2" data-visible="true" data-align="center" data-halign="center" data-valign="middle">进干流量</th>
+                            <th data-field="Can_Flow_Wet2" data-visible="true" data-align="center" data-halign="center" data-valign="middle">进湿流量</th>
+                            <th data-field="Can_Produce2" data-visible="true" data-align="center" data-halign="center" data-valign="middle">产气流量</th>
+                            <th data-field="Can_Temp3_1" data-visible="true" data-align="center" data-halign="center" data-valign="middle">温度1</th>
+                            <th data-field="Can_Temp3_2" data-visible="true" data-align="center" data-halign="center" data-valign="middle">温度2</th>
+                            <th data-field="Can_Flow_Dry3" data-visible="true" data-align="center" data-halign="center" data-valign="middle">进干流量</th>
+                            <th data-field="Can_Flow_Wet3" data-visible="true" data-align="center" data-halign="center" data-valign="middle">进湿流量</th>
+                            <th data-field="Can_Produce3" data-visible="true" data-align="center" data-halign="center" data-valign="middle">产气流量</th>
+                            <th data-field="Can_Temp4_1" data-visible="true" data-align="center" data-halign="center" data-valign="middle">温度1</th>
+                            <th data-field="Can_Temp4_2" data-visible="true" data-align="center" data-halign="center" data-valign="middle">温度2</th>
+                            <th data-field="Can_Flow_Dry4" data-visible="true" data-align="center" data-halign="center" data-valign="middle">进干流量</th>
+                            <th data-field="Can_Flow_Wet4" data-visible="true" data-align="center" data-halign="center" data-valign="middle">进湿流量</th>
+                            <th data-field="Can_Produce4" data-visible="true" data-align="center" data-halign="center" data-valign="middle">产气流量</th>
+                            <th data-field="Can_Pressure" data-visible="true" data-align="center" data-halign="center" data-valign="middle">罐体压力</th>
+                            <th data-field="Store_Pressure" data-visible="true" data-align="center" data-halign="center" data-valign="middle">储气压力</th>
+                            <th data-field="Supply_Flow" data-visible="true" data-align="center" data-halign="center" data-valign="middle">供气流量</th>
+                            <th data-field="Supply_Pressure" data-visible="true" data-align="center" data-halign="center" data-valign="middle">供气压力</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12"><div id="linechart" style="width:100%;"></div></div>
+
         </div>
     </div>
-    <div class="container-fluid">
-        <div id="linechart" style="width:100%;"></div>
-    </div>
-    
-    <script type="text/javascript" src="../js/bj-bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/bj-datatables/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="../js/bj-datatables/dataTables.bootstrap.min.js"></script>
+
+
+    <!--<script type="text/javascript" src="../js/bj-datatables/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../js/bj-datatables/dataTables.bootstrap.min.js"></script>-->
+
+   
 
     <script type="text/javascript" src="../js/bj-highcharts/highcharts.js"></script>
 
-    <script type="text/javascript" src="../js/tablechart-m.js"></script>
-    
+    <!--<script type="text/javascript" src="../js/tablechart-m.js"></script>-->
+
 
 </div>

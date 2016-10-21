@@ -1,0 +1,13 @@
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Business.BllHisData+<>c__DisplayClass0 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Business.BllHistoryData+<>c__DisplayClass0 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Business.BllHistoryData+<>c__DisplayClass2 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Business.BllRealData+<>c__DisplayClass0 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Repository.IRepository`1 生成填充码: 类型是一个接口。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Repository.ExecuteRepository+<>c__DisplayClass0 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Repository.ExecuteRepository+<>c__DisplayClass2 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Repository.HisDataRepository+<>c__DisplayClass0 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Repository.HisDataRepository+<>c__DisplayClass2 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Repository.HistoryDataRepository+<>c__DisplayClass0 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Repository.HistoryDataRepository+<>c__DisplayClass2 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Repository.RealDataRepository+<>c__DisplayClass0 生成填充码: 类型不受支持，因为存在内部限制。
+G:\Github\Repos\ZhaoQi\ZhaoQi\ZhaoQi.Web.Core.UnitTest\Fakes\ZhaoQi.Web.Core.fakes : warning : 无法为 ZhaoQi.Web.Core.Repository.RealDataRepository+<>c__DisplayClass2 生成填充码: 类型不受支持，因为存在内部限制。
