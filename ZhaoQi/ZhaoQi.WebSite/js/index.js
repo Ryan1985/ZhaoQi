@@ -11,6 +11,10 @@ pageViewApp.config(function($routeProvider) {
             templateUrl: '/RealTime/RealTime.html',
             controller: 'realTimeController'
         })
+        .when('/Execute', {
+            templateUrl: '/Execute/Execute.html',
+            controller: 'executeController'
+        })
         .when('/HistoryData', {
             templateUrl: '/HistoryData/HistoryData.html',
             controller: 'historyDataController'
@@ -191,3 +195,31 @@ pageViewApp.controller('historyDataController', ['$scope', function ($scope) {
     };
 }]);
 
+pageViewApp.controller('executeController', ['$scope', function ($scope) {
+
+    $scope.Inital = function() {
+        ReadData();
+    };
+
+
+    $scope.trigger = function(tagId, projectid, value) {
+        jQuery.post('../api/Execute', { 'Tag': tagId, 'ProjectID': projectid, 'TagValue': value }, function(data) {
+
+        });
+    };
+
+
+
+    function ReadData() {
+        jQuery.get('../api/Execute', function (data) {
+            var dataModel = JSON.parse(data);
+            $scope.tagList = dataModel;
+            setTimeout(ReadData, 1000);
+        });
+    }
+
+
+
+
+
+}])
