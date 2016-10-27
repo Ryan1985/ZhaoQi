@@ -30,18 +30,27 @@ namespace ZhaoQi.Web.Core.Business
 
         public int Excute(IEnumerable<ExecuteModel> models)
         {
-            var existedIdList = _entities.Query.Select(e => e.Id).ToArray();
+            var existedModelList = _entities.Query.Select(e =>new{ modelId = e.ProjectId+"_"+e.Tag,e.Id}).ToArray();
             var updateList = new List<ExecuteModel>();
             var insertList = new List<ExecuteModel>();
             foreach (var model in models)
             {
-                if (existedIdList.Contains(model.Id))
+                model.Flag = "1";
+                var existedId =
+                    existedModelList.Where(
+                        e =>
+                            e.modelId.Equals(model.ProjectId + "_" + model.Tag,
+                                System.StringComparison.CurrentCultureIgnoreCase))
+                        .Select(e => e.Id).FirstOrDefault();
+
+                if (existedId == 0)
                 {
-                    updateList.Add(model);
+                    insertList.Add(model);
                 }
                 else
                 {
-                    insertList.Add(model);
+                    model.Id = existedId;
+                    updateList.Add(model);
                 }
             }
 
@@ -64,5 +73,10 @@ namespace ZhaoQi.Web.Core.Business
 
 
 
+
+        public IEnumerable<ExecuteModel> Query()
+        {
+            return Entities.Query.ToList();
+        }
     }
 }

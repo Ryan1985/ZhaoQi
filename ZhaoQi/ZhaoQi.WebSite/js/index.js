@@ -197,14 +197,35 @@ pageViewApp.controller('historyDataController', ['$scope', function ($scope) {
 
 pageViewApp.controller('executeController', ['$scope', function ($scope) {
 
-    $scope.Inital = function() {
+    $scope.Inital = function () {
+        $scope.viewModel = {};
         ReadData();
     };
 
 
-    $scope.trigger = function(tagId, projectid, value) {
-        jQuery.post('../api/Execute', { 'Tag': tagId, 'ProjectID': projectid, 'TagValue': value }, function(data) {
+    $scope.setAlarmParam = function () {
+        jQuery.post('../api/Execute', { "": JSON.stringify([$scope.viewModel.CanPressure, $scope.viewModel.SupplyPressure, $scope.viewModel.StorePressure]) }, function (data) {
+            ReadData();
+        },function(error) {
+            alert(error);
+        });
+    };
 
+    $scope.setUploadSpan = function () {
+        jQuery.post('../api/Execute', { "": JSON.stringify([$scope.viewModel.UpdateSpan]) }, function (data) {
+            ReadData();
+        }, function (error) {
+            alert(error);
+        });
+    };
+
+
+    $scope.trigger = function(operation,triggerNumber) {
+        var triggerTagId = "400" + triggerNumber;
+        jQuery.post('../api/Execute', { "": JSON.stringify([{ "ProjectId": "1", "Tag": triggerTagId, "TagValue": operation }]) }, function (data) {
+            ReadData();
+        }, function (error) {
+            alert(error);
         });
     };
 
@@ -212,9 +233,26 @@ pageViewApp.controller('executeController', ['$scope', function ($scope) {
 
     function ReadData() {
         jQuery.get('../api/Execute', function (data) {
-            var dataModel = JSON.parse(data);
-            $scope.tagList = dataModel;
-            setTimeout(ReadData, 1000);
+            var dataModel = data;
+            $scope.viewModel.CanPressure = dataModel["1_4018"];
+            $scope.viewModel.SupplyPressure = dataModel["1_4019"];
+            $scope.viewModel.StorePressure = dataModel["1_4020"];
+            $scope.viewModel.UploadSpan = dataModel["1_4021"];
+            $scope.viewModel.CanPressure.TagValue = parseFloat($scope.viewModel.CanPressure.TagValue);
+            $scope.viewModel.SupplyPressure.TagValue = parseFloat($scope.viewModel.SupplyPressure.TagValue);
+            $scope.viewModel.StorePressure.TagValue = parseFloat($scope.viewModel.StorePressure.TagValue);
+            $scope.viewModel.UploadSpan.TagValue = parseFloat($scope.viewModel.UploadSpan.TagValue);
+            $scope.viewModel.trigger1 = dataModel["1_4001"];
+            $scope.viewModel.trigger2 = dataModel["1_4002"];
+            $scope.viewModel.trigger3 = dataModel["1_4003"];
+            $scope.viewModel.trigger4 = dataModel["1_4004"];
+            $scope.viewModel.trigger5 = dataModel["1_4005"];
+            $scope.viewModel.trigger6 = dataModel["1_4006"];
+            $scope.viewModel.trigger7 = dataModel["1_4007"];
+            $scope.viewModel.trigger8 = dataModel["1_4008"];
+
+            $scope.$apply();
+            //setTimeout(ReadData, 1000);
         });
     }
 

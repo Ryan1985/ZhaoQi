@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ZhaoQi.Web.Core.Models
 {
-    [Table("ZHANGLI.Execute")]
+    [Table("ZHANGLI.Executea")]
     public class ExecuteModel
     {
         public int Id { get; set; }
