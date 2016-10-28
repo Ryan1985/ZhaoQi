@@ -38,7 +38,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-4 pull-right">
-                            <button class="btn sheetButton" ng-click="setAlarmParam()">设置报警参数</button>
+                            <button class="btn sheetButton  btn-primary" ng-click="setAlarmParam()">设置报警参数</button>
                         </div>
                     </div>
                 </fieldset>
@@ -56,7 +56,7 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-4 pull-right">
-                            <button class="btn sheetButton" ng-click="setUploadSpan()">设置上传时间</button>
+                            <button class="btn sheetButton  btn-primary" ng-click="setUploadSpan()">设置上传时间</button>
                         </div>
                     </div>
                 </fieldset>
@@ -66,52 +66,52 @@
                     <legend>输出继电器控制</legend>
                     <div class="row">
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(1,1)" ng-disabled="viewModel.trigger1.TagValue=='1'" >输出1开</button>
+                            <button ng-class="{true:'btn sheetButton',false:'btn sheetButton btn-success'}[viewModel.trigger1.isOn]" ng-click=" trigger(1,1)" ng-disabled="{{viewModel.trigger1.isOn==true}}">输出1开</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(1,2)" ng-disabled="viewModel.trigger2.TagValue=='1'" >输出2开</button>
+                            <button ng-class="{true:'btn sheetButton',false:'btn sheetButton btn-success'}[viewModel.trigger2.isOn]" ng-click="trigger(1,2)" ng-disabled="{{viewModel.trigger2.isOn==true}}">输出2开</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(1,3)" ng-disabled="viewModel.trigger3.TagValue=='1'" >输出3开</button>
+                            <button ng-class="{true:'btn sheetButton',false:'btn sheetButton btn-success'}[viewModel.trigger3.isOn]" ng-click="trigger(1,3)" ng-disabled="{{viewModel.trigger3.isOn==true}}">输出3开</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(1,4)" ng-disabled="viewModel.trigger4.TagValue=='1'" >输出4开</button>
+                            <button ng-class="{true:'btn sheetButton',false:'btn sheetButton btn-success'}[viewModel.trigger4.isOn]" ng-click="trigger(1,4)" ng-disabled="{{viewModel.trigger4.isOn==true}}">输出4开</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(0,1)" ng-disabled="viewModel.trigger1.TagValue=='0'" >输出1关</button>
+                            <button ng-class="{true:'btn sheetButton btn-danger',false:'btn sheetButton'}[viewModel.trigger1.isOn]" ng-click="trigger(0,1)" ng-disabled="{{viewModel.trigger1.isOn==false}}">输出1关</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(0,2)" ng-disabled="viewModel.trigger2.TagValue=='0'" >输出2关</button>
+                            <button ng-class="{true:'btn sheetButton btn-danger',false:'btn sheetButton'}[viewModel.trigger2.isOn]" ng-click="trigger(0,2)" ng-disabled="{{viewModel.trigger2.isOn==false}}">输出2关</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(0,3)" ng-disabled="viewModel.trigger3.TagValue=='0'" >输出3关</button>
+                            <button ng-class="{true:'btn sheetButton btn-danger',false:'btn sheetButton'}[viewModel.trigger3.isOn]" ng-click="trigger(0,3)" ng-disabled="{{viewModel.trigger3.isOn==false}}">输出3关</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(0,4)" ng-disabled="viewModel.trigger4.TagValue=='0'" >输出4关</button>
+                            <button ng-class="{true:'btn sheetButton btn-danger',false:'btn sheetButton'}[viewModel.trigger4.isOn]" ng-click="trigger(0,4)" ng-disabled="{{viewModel.trigger4.isOn==false}}">输出4关</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(1,5)" ng-disabled="viewModel.trigger5.TagValue=='1'" >输出5开</button>
+                            <button ng-class="{true:'btn sheetButton',false:'btn sheetButton btn-success'}[viewModel.trigger5.isOn]" ng-click="trigger(1,5)" ng-disabled="{{viewModel.trigger5.isOn==true}}">输出5开</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(1,6)" ng-disabled="viewModel.trigger6.TagValue=='1'" >输出6开</button>
+                            <button ng-class="{true:'btn sheetButton',false:'btn sheetButton btn-success'}[viewModel.trigger6.isOn]" ng-click="trigger(1,6)" ng-disabled="{{viewModel.trigger6.isOn==true}}">输出6开</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(1,7)" ng-disabled="viewModel.trigger7.TagValue=='1'" >输出7开</button>
+                            <button ng-class="{true:'btn sheetButton',false:'btn sheetButton btn-success'}[viewModel.trigger7.isOn]" ng-click="trigger(1,7)" ng-disabled="{{viewModel.trigger7.isOn==true}}">输出7开</button>
                         </div>                 
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(1,8)" ng-disabled="viewModel.trigger8.TagValue=='1'" >输出8开</button>
+                            <button ng-class="{true:'btn sheetButton',false:'btn sheetButton btn-success'}[viewModel.trigger8.isOn]" ng-click="trigger(1,8)" ng-disabled="{{viewModel.trigger8.isOn==true}}">输出8开</button>
                         </div>
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(0,5)" ng-disabled="viewModel.trigger5.TagValue=='0'" >输出5关</button>
+                            <button ng-class="{true:'btn sheetButton btn-danger',false:'btn sheetButton'}[viewModel.trigger5.isOn]" ng-click="trigger(0,5)" ng-disabled="{{viewModel.trigger5.isOn==false}}">输出5关</button>
                         </div>
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(0,6)" ng-disabled="viewModel.trigger6.TagValue=='0'" >输出6关</button>
+                            <button ng-class="{true:'btn sheetButton btn-danger',false:'btn sheetButton'}[viewModel.trigger6.isOn]" ng-click="trigger(0,6)" ng-disabled="{{viewModel.trigger6.isOn==false}}">输出6关</button>
                         </div>
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(0,7)" ng-disabled="viewModel.trigger7.TagValue=='0'" >输出7关</button>
+                            <button ng-class="{true:'btn sheetButton btn-danger',false:'btn sheetButton'}[viewModel.trigger7.isOn]" ng-click="trigger(0,7)" ng-disabled="{{viewModel.trigger7.isOn==false}}">输出7关</button>
                         </div>
                         <div class=" col-lg-3">
-                            <button class="btn sheetButton" ng-click="trigger(0,8)" ng-disabled="viewModel.trigger8.TagValue=='0'" >输出8关</button>
+                            <button ng-class="{true:'btn sheetButton btn-danger',false:'btn sheetButton'}[viewModel.trigger8.isOn]" ng-click="trigger(0,8)" ng-disabled="{{viewModel.trigger8.isOn==false}}">输出8关</button>
                         </div>
                     </div>
                 </fieldset>

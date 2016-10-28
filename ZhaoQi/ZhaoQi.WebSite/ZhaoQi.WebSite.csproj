@@ -602,6 +602,7 @@
     <Content Include="Global.asax" />
     <Content Include="HistoryData\HistoryData.html" />
     <Content Include="index.html" />
+    <Content Include="Introduction\Introduction.html" />
     <Content Include="js\bj-ace\ace-elements.js" />
     <Content Include="js\bj-ace\ace-extra.js" />
     <Content Include="js\bj-ace\ace-rtl.css" />

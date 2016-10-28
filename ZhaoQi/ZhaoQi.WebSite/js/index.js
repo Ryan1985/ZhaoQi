@@ -4,8 +4,11 @@ var pageViewApp = angular.module('pageView', ['ngRoute', 'ngAnimate']);
 pageViewApp.config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '/RealTime/RealTime.html',
-            controller: 'realTimeController'
+            templateUrl: '/Introduction/Introduction.html',
+        })
+        .when('/Introduction', {
+            templateUrl: '/Introduction/Introduction.html',
+            //controller: 'introductionController'
         })
         .when('/RealTime', {
             templateUrl: '/RealTime/RealTime.html',
@@ -22,7 +25,6 @@ pageViewApp.config(function($routeProvider) {
 
 
 });
-
 
 pageViewApp.controller('realTimeController', ['$scope', function($scope) {
     
@@ -206,26 +208,21 @@ pageViewApp.controller('executeController', ['$scope', function ($scope) {
     $scope.setAlarmParam = function () {
         jQuery.post('../api/Execute', { "": JSON.stringify([$scope.viewModel.CanPressure, $scope.viewModel.SupplyPressure, $scope.viewModel.StorePressure]) }, function (data) {
             ReadData();
-        },function(error) {
-            alert(error);
         });
     };
 
     $scope.setUploadSpan = function () {
-        jQuery.post('../api/Execute', { "": JSON.stringify([$scope.viewModel.UpdateSpan]) }, function (data) {
+        jQuery.post('../api/Execute', { "": JSON.stringify([$scope.viewModel.UploadSpan]) }, function (data) {
             ReadData();
-        }, function (error) {
-            alert(error);
         });
     };
 
 
     $scope.trigger = function(operation,triggerNumber) {
-        var triggerTagId = "400" + triggerNumber;
-        jQuery.post('../api/Execute', { "": JSON.stringify([{ "ProjectId": "1", "Tag": triggerTagId, "TagValue": operation }]) }, function (data) {
+        var currentTrigger = $scope.triggerList[triggerNumber-1];
+        currentTrigger.TagValue = operation;
+        jQuery.post('../api/Execute',  { "": JSON.stringify([currentTrigger]) }, function (data) {
             ReadData();
-        }, function (error) {
-            alert(error);
         });
     };
 
@@ -250,6 +247,21 @@ pageViewApp.controller('executeController', ['$scope', function ($scope) {
             $scope.viewModel.trigger6 = dataModel["1_4006"];
             $scope.viewModel.trigger7 = dataModel["1_4007"];
             $scope.viewModel.trigger8 = dataModel["1_4008"];
+            $scope.viewModel.trigger1.isOn = $scope.viewModel.trigger1.TagValue == "1";
+            $scope.viewModel.trigger2.isOn = $scope.viewModel.trigger2.TagValue == "1";
+            $scope.viewModel.trigger3.isOn = $scope.viewModel.trigger3.TagValue == "1";
+            $scope.viewModel.trigger4.isOn = $scope.viewModel.trigger4.TagValue == "1";
+            $scope.viewModel.trigger5.isOn = $scope.viewModel.trigger5.TagValue == "1";
+            $scope.viewModel.trigger6.isOn = $scope.viewModel.trigger6.TagValue == "1";
+            $scope.viewModel.trigger7.isOn = $scope.viewModel.trigger7.TagValue == "1";
+            $scope.viewModel.trigger8.isOn = $scope.viewModel.trigger8.TagValue == "1";
+
+
+
+
+            $scope.triggerList = [$scope.viewModel.trigger1, $scope.viewModel.trigger2, $scope.viewModel.trigger3, $scope.viewModel.trigger4,
+                $scope.viewModel.trigger5, $scope.viewModel.trigger6, $scope.viewModel.trigger7, $scope.viewModel.trigger8];
+            
 
             $scope.$apply();
             //setTimeout(ReadData, 1000);
