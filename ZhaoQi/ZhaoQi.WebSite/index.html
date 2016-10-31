@@ -96,23 +96,10 @@
             <script type="text/javascript">
                 try { ace.settings.check('sidebar', 'fixed') } catch (e) { }
 
-                jQuery('#sidebar>ul>li').bind('onclick', function () {
-                    jQuery('#sidebar>ul>li').removeClass('active');
-                    this.addClass('active');
-                });
-
             </script>
 
             <ul class="nav nav-list">
                 <li class="active">
-                    <a href="#/Introduction">
-                        <i class="menu-icon fa fa-tachometer"></i>
-                        <span class="menu-text"> 公司简介 </span>
-                    </a>
-
-                    <b class="arrow"></b>
-                </li>
-                <li>
                     <a href="#/RealTime">
                         <i class="menu-icon fa fa-tachometer"></i>
                         <span class="menu-text"> 实时监控 </span>
@@ -122,7 +109,7 @@
                 </li>
                 <li>
                     <a href="#/HistoryData">
-                        <i class="menu-icon fa fa-tachometer"></i>
+                        <i class="menu-icon fa fa-line-chart"></i>
                         <span class="menu-text"> 历史报表 </span>
                     </a>
 
@@ -130,13 +117,21 @@
                 </li>
                 <li>
                     <a href="#/Execute">
-                        <i class="menu-icon fa fa-tachometer"></i>
+                        <i class="menu-icon fa fa-gears"></i>
                         <span class="menu-text"> 参数设置 </span>
                     </a>
 
                     <b class="arrow"></b>
                 </li>
 
+                <li>
+                    <a href="#/Introduction">
+                        <i class="menu-icon fa fa-home"></i>
+                        <span class="menu-text"> 公司简介 </span>
+                    </a>
+
+                    <b class="arrow"></b>
+                </li>
             </ul><!-- /.nav-list -->
             <!-- #section:basics/sidebar.layout.minimize -->
             <div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse">
@@ -204,6 +199,11 @@
     <![endif]-->
     <script type="text/javascript">
         if ('ontouchstart' in document.documentElement) document.write("<script src='/assets/ace/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+        
+        jQuery('#sidebar>ul>li').bind('click', function () {
+            jQuery('#sidebar>ul>li').removeClass('active');
+            jQuery(this).addClass('active');
+        });
     </script>
 
     <!-- page specific plugin scripts -->

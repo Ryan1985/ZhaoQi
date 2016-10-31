@@ -4,7 +4,8 @@ var pageViewApp = angular.module('pageView', ['ngRoute', 'ngAnimate']);
 pageViewApp.config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl: '/Introduction/Introduction.html',
+            templateUrl: '/RealTime/RealTime.html',
+            controller: 'realTimeController'
         })
         .when('/Introduction', {
             templateUrl: '/Introduction/Introduction.html',
